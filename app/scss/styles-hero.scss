@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+
+  &__links {
+    display: flex;
+    width: 32%;
+  }
+
+  &__link {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: $secondary-color;
+  }
+  &__link:hover {
+    color: $primary-color;
+  }
+
+  &__link:not(:last-child) {
+    margin-right: 16%;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    width: 32%;
+    .letter-a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: $secondary-color;
+      border-radius: 5px;
+      text-align: center;
+      color: $main-color;
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 32%;
+  }
+}
+
+.button {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  padding: 3% 16%;
+  color: $secondary-color;
+  cursor: pointer;
+}
+
+.button-primiry {
+  border: 1.5px solid #fff;
+  border-radius: 20px;
+}
+
+.smartWatch {
+  width: 19%;
+  margin: 0 auto;
+  margin-bottom: 8%;
+  filter: drop-shadow(2px 2px 5px rgba(10, 11, 82, 0.452));
+
+  img {
+    width: 100%;
+  }
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  width: 200%;
+  height: 188%;
+  z-index: -1;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  background: linear-gradient(160deg, #119dfa 10%, #52eaec);
+}

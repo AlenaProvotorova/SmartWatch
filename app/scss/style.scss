@@ -1,0 +1,128 @@
+@import "../../node_modules/normalize.css/normalize";
+// @import "../../node_modules/slick-carousel/slick/slick";
+// @import "../../node_modules/magnific-popup/dist/magnific-popup";
+$main-color: #2286eb;
+$primary-color: #334e68;
+$secondary-color: #fff;
+$text-color: #627d98;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 1920px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: $text-color;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  color: $secondary-color;
+}
+
+.main-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+
+  &__links {
+    display: flex;
+    width: 32%;
+  }
+
+  &__link {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: $secondary-color;
+  }
+  &__link:hover {
+    color: $primary-color;
+  }
+
+  &__link:not(:last-child) {
+    margin-right: 16%;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    width: 32%;
+    .letter-a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: $secondary-color;
+      border-radius: 5px;
+      text-align: center;
+      color: $main-color;
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 32%;
+  }
+}
+
+.button {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  padding: 3% 16%;
+  color: $secondary-color;
+  cursor: pointer;
+}
+
+.button-primiry {
+  border: 1.5px solid #fff;
+  border-radius: 20px;
+}
+
+.smartWatch {
+  width: 19%;
+  margin: 0 auto;
+  margin-bottom: 8%;
+  filter: drop-shadow(2px 2px 5px rgba(10, 11, 82, 0.452));
+
+  img {
+    width: 100%;
+  }
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  width: 200%;
+  height: 188%;
+  z-index: -1;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  background: linear-gradient(160deg, #119dfa 10%, #52eaec);
+}
