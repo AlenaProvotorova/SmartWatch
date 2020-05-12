@@ -6,15 +6,15 @@ const gulp = require("gulp"),
   concatCss = require("gulp-concat-css"),
   rename = require("gulp-rename");
 
-  gulp.task("scss", function () {
-    return gulp
-      .src("app/scss/**/*.scss")
-      .pipe(sass())
-      .pipe(concatCss("styles.css"))
-      .pipe(rename({ suffix: ".min" }))
-      .pipe(gulp.dest("app/css"))
-      .pipe(browserSync.reload({ stream: true }));
-  });
+gulp.task("scss", function () {
+  return gulp
+    .src("app/scss/**/*.scss")
+    .pipe(sass())
+    .pipe(concatCss("styles.css"))
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(gulp.dest("app/css"))
+    .pipe(browserSync.reload({ stream: true }));
+});
 
 gulp.task("html", function () {
   return gulp.src("app/*.html").pipe(browserSync.reload({ stream: true }));

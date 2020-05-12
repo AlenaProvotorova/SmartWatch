@@ -1,0 +1,186 @@
+$main-color: #2286eb;
+$primary-color: #334e68;
+$secondary-color: #fff;
+$text-color: #627d98;
+
+.how-it-works {
+  position: relative;
+}
+.how-it-works::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+  height: 545px;
+  background-image: url("../img/vawe1.png");
+  background-repeat: no-repeat;
+  filter: hue-rotate(348deg);
+}
+
+.steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.step {
+  flex-basis: 32%;
+  padding: 3% 3%;
+  margin: 2% 0;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+
+  .fas {
+    padding-top: 15%;
+    font-size: 2.5rem;
+    color: $main-color;
+  }
+  .step-title {
+    color: $primary-color;
+    font-size: 1.3rem;
+    padding-top: 5%;
+  }
+  .step-text {
+    padding-top: 10%;
+  }
+}
+
+.step:hover {
+  background-color: #fff;
+  filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.1));
+  transform: translateY(-3px);
+}
+
+.step1,
+.step2,
+.step3 {
+  position: relative;
+}
+
+.step1::before {
+  content: "1";
+  position: absolute;
+  top: -5%;
+  left: 25%;
+  font-size: 9rem;
+  font-weight: 500;
+  color: rgba(94, 93, 93, 0.116);
+  z-index: -1;
+}
+.step2::before {
+  content: "2";
+  position: absolute;
+  top: -5%;
+  left: 25%;
+  font-size: 9rem;
+  font-weight: 500;
+  color: rgba(94, 93, 93, 0.116);
+  z-index: -1;
+}
+.step3::before {
+  content: "3";
+  position: absolute;
+  top: -5%;
+  left: 25%;
+  font-size: 9rem;
+  font-weight: 500;
+  color: rgba(94, 93, 93, 0.116);
+  z-index: -1;
+}
+
+.block-text {
+  margin: 5% auto;
+  width: 80%;
+  text-align: center;
+}
+
+.how-it-works__video {
+  display: flex;
+  justify-content: center;
+
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    filter: drop-shadow(0 4px 10px rgba(32, 110, 255, 0.726));
+    border-radius: 20px;
+  }
+  .video {
+    width: 102%;
+    height: 100%;
+    position: relative;
+    left: -6px;
+  }
+
+  .video[poster] {
+    background-image: url("../img/video_bg.png");
+  }
+}
+
+.video-btn {
+  position: absolute;
+  top: 43%;
+  left: 47%;
+  pointer-events: visible;
+  cursor: pointer;
+  &__arrow {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: $main-color;
+    position: absolute;
+    top: -6px;
+    left: -5px;
+    z-index: 2;
+  }
+}
+
+.video-btn::before,
+.video-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.video-btn::before {
+  width: 70px;
+  height: 70px;
+  top: -15px;
+  left: -15px;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.7s ease 0.1s;
+}
+
+.video-btn::after {
+  width: 90px;
+  height: 90px;
+  top: -25px;
+  left: -25px;
+  border-radius: 50%;
+  opacity: 0;
+  z-index: 0;
+  background-color: #fff;
+  transform: scale(0);
+  transition: all 0.6s ease;
+}
+
+.video-btn:hover::before {
+  opacity: 40%;
+  transform: scale(1);
+}
+
+.video-btn:hover::after {
+  opacity: 30%;
+  transform: scale(1);
+}
