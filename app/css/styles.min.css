@@ -1,3 +1,176 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.blog::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 500px;
+  transform: scaleX(-1);
+  background: url("../img/vawe1.png") no-repeat;
+  background-position: right 126%;
+  filter: hue-rotate(348deg);
+  opacity: 0.5;
+}
+
+.blogs-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+
+.blog-item {
+  cursor: pointer;
+  width: 30%;
+  padding: 4% 3%;
+  background-color: #fff;
+  border-radius: 5px;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
+  transition: all 0.3s ease;
+}
+
+.blog-item__date {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.blog-item__title {
+  font-weight: 600;
+  padding: 5% 0;
+}
+
+.blog-item:hover {
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.4));
+}
+
+.blog-item:hover .blog-item__title {
+  color: #2286eb;
+}
+
+.blog-button-block {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-button {
+  margin: 4% 0;
+  padding: 1% 4%;
+  border: transparent;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #2286eb;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.blog-button:hover {
+  box-shadow: inset 0 0 10px #0e0469;
+  color: #dde7ff;
+}
+.contact-form {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-1 {
+  display: flex;
+  align-items: center;
+  width: 25%;
+  padding: 0 1%;
+  margin: 10px;
+  background-color: #fff;
+  border: 2px solid #2286eb;
+  border-radius: 20px;
+  color: #2286eb;
+}
+
+.contact-form-1 .fab {
+  color: #2286eb;
+  font-size: 1.5rem;
+}
+
+.contact-form-1 input {
+  outline: none;
+  width: 90%;
+  padding: 2%;
+  background-color: transparent;
+  border-color: transparent;
+  color: #2286eb;
+}
+
+.contact-form-1 ::-webkit-input-placeholder {
+  color: #2286eb;
+}
+
+.contact-form-1 select {
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  border-color: transparent;
+  color: #2286eb;
+  cursor: pointer;
+}
+
+.contact-form-1 select option {
+  color: #2286eb;
+}
+
+.contact-button {
+  padding: 1%;
+  margin: 10px;
+  width: 15%;
+  border: 0px solid transparent;
+  background-color: #2286eb;
+  border-color: transparent;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-button:hover {
+  box-shadow: inset 0 0 10px #0e0469;
+  color: #dde7ff;
+}
+
+.contact-links {
+  width: 100%;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-links .link {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-links .fas {
+  padding: 2%;
+  color: #2286eb;
+  font-size: 1.3rem;
+}
+
+.contact-links a {
+  display: inline-block;
+  width: 90%;
+  padding: 2%;
+  color: #2286eb;
+  font-size: 1.1rem;
+}
 .cta {
   margin: 5% 0;
   width: 100%;
@@ -169,6 +342,9 @@
   background-repeat: no-repeat;
   background-size: contain;
   filter: drop-shadow(2px 2px 5px rgba(0, 23, 153, 0.418));
+}
+.footer {
+  background-color: #2286eb;
 }
 .how-it-works {
   position: relative;
@@ -360,6 +536,138 @@
   opacity: 30%;
   transform: scale(1);
 }
+.map {
+  width: 100%;
+  margin-top: 2%;
+  background-image: url("../img/forMap.png");
+  background-repeat: no-repeat;
+}
+
+.icon {
+  color: #2286eb;
+  display: flex;
+}
+
+.icon .fas {
+  display: inline-block;
+  margin: auto;
+  padding: 10%;
+  font-size: 8rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon .fas:hover {
+  transform: scale(1.2);
+}
+.pricing {
+  position: relative;
+  padding-bottom: 4%;
+}
+
+.pricing::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  transform: scaleX(1);
+  background: url("../img/vawe1.png") no-repeat;
+  background-position: right 126%;
+  filter: hue-rotate(348deg);
+  opacity: 0.5;
+}
+
+.pricing-block {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 22%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 3%;
+  margin: 0 2%;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card__plan {
+  background-color: #e6f6ff;
+  color: #2286eb;
+  font-weight: 600;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 3% 5%;
+  border-radius: 15px;
+}
+
+.card__price {
+  color: #2286eb;
+  font-size: 2rem;
+  font-weight: 900;
+  padding-top: 15%;
+}
+
+.card__time {
+  font-size: 0.6rem;
+}
+
+.card__details {
+  text-align: center;
+  padding: 20% 0 15% 0;
+  font-size: 0.7rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card__numbers-block {
+  display: flex;
+  margin: 15% 0;
+  font-size: 0.9rem;
+}
+
+.card__numbers-block .numbers-block__numbers {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  margin-right: 3%;
+  font-weight: 600;
+}
+
+.card__numbers-block .numbers-block__detail {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.card__button {
+  padding: 4% 25%;
+  border: 2px solid #2286eb;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #2286eb;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease-in;
+}
+
+.card:hover {
+  background-color: #2286eb;
+  color: #fff;
+  filter: drop-shadow(0 2px 5px #2286eb);
+  transform: translateY(-3px);
+}
+
+.card:hover .card__price {
+  color: #fff;
+}
 .screenshots-all {
   display: flex;
   flex-wrap: nowrap;
@@ -390,6 +698,7 @@
 }
 .testimonial {
   position: relative;
+  overflow: hidden;
 }
 
 .testimonial::before {
@@ -399,8 +708,8 @@
   left: 0;
   width: 100%;
   height: 500px;
-  background: url("../img/vawe1.png");
-  transform: scaleX(-1.5);
+  background: url("../img/vawe1.png") no-repeat;
+  transform: scaleX(-1);
   background-position: right 126%;
   filter: hue-rotate(348deg);
   opacity: 0.5;
@@ -885,12 +1194,18 @@ template {
 
 body {
   width: 100%;
-  height: 5000px;
+  height: 7000px;
   max-width: 1920px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #627d98;
   background: linear-gradient(to bottom, rgba(237, 238, 238, 0.856), #fff);
+}
+
+button:active,
+button:focus,
+button:hover {
+  outline: none;
 }
 
 strong {

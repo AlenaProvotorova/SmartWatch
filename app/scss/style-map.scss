@@ -1,0 +1,24 @@
+$main-color: #2286eb;
+
+.map {
+  width: 100%;
+  margin-top: 2%;
+  background-image: url("../img/forMap.png");
+  background-repeat: no-repeat;
+}
+
+.icon {
+  color: $main-color;
+  display: flex;
+
+  .fas {
+    display: inline-block;
+    margin: auto;
+    padding: 10%;
+    font-size: 8rem;
+    transition: all 0.2s ease-in-out;
+  }
+  .fas:hover {
+    transform: scale(1.2);
+  }
+}
