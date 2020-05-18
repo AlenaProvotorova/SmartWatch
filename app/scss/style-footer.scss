@@ -6,3 +6,48 @@ $text-color: #627d98;
 .footer {
   background-color: $main-color;
 }
+
+.footer-blocks {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+
+.footer-copyright {
+  margin-top: 5%;
+  color: #fff;
+}
+
+.footer-blok2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 70%;
+  a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 300;
+    transition: all 0.2s ease-in-out;
+  }
+  a:hover {
+    color: $primary-color;
+  }
+}
+
+.footer-menu {
+  margin-top: 2%;
+  width: 100%;
+  text-align: end;
+  a {
+    margin-left: 10%;
+  }
+}
+
+.social-links {
+  width: 35%;
+  text-align: end;
+  a {
+    margin-left: 10%;
+  }
+}

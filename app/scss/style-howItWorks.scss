@@ -14,11 +14,13 @@ $text-color: #627d98;
   right: 0;
   width: 100%;
   z-index: -1;
-  height: 545px;
+  height: 700px;
   background-image: url("../img/vawe1.png");
   background-repeat: no-repeat;
   filter: hue-rotate(348deg);
   opacity: 0.5;
+  z-index: -1;
+  background-size: cover;
 }
 
 .steps {

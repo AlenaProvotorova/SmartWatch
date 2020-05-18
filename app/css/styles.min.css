@@ -11,12 +11,13 @@
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 500px;
-  transform: scaleX(-1);
+  height: 700px;
   background: url("../img/vawe1.png") no-repeat;
-  background-position: right 126%;
   filter: hue-rotate(348deg);
   opacity: 0.5;
+  transform: scaleX(-1);
+  z-index: -1;
+  background-size: cover;
 }
 
 .blogs-block {
@@ -170,6 +171,11 @@
   padding: 2%;
   color: #2286eb;
   font-size: 1.1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-links a:hover {
+  color: #334e68;
 }
 .cta {
   margin: 5% 0;
@@ -273,10 +279,12 @@
   left: 0;
   right: 0;
   width: 100%;
-  height: 500px;
+  height: 700px;
   background: url("../img/vawe1.png") no-repeat;
   filter: hue-rotate(348deg);
   opacity: 0.5;
+  z-index: -1;
+  background-size: cover;
 }
 
 .faq-block {
@@ -346,6 +354,55 @@
 .footer {
   background-color: #2286eb;
 }
+
+.footer-blocks {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+
+.footer-copyright {
+  margin-top: 5%;
+  color: #fff;
+}
+
+.footer-blok2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.footer-blok2 a {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 300;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-blok2 a:hover {
+  color: #334e68;
+}
+
+.footer-menu {
+  margin-top: 2%;
+  width: 100%;
+  text-align: end;
+}
+
+.footer-menu a {
+  margin-left: 10%;
+}
+
+.social-links {
+  width: 35%;
+  text-align: end;
+}
+
+.social-links a {
+  margin-left: 10%;
+}
 .how-it-works {
   position: relative;
 }
@@ -358,11 +415,13 @@
   right: 0;
   width: 100%;
   z-index: -1;
-  height: 545px;
+  height: 700px;
   background-image: url("../img/vawe1.png");
   background-repeat: no-repeat;
   filter: hue-rotate(348deg);
   opacity: 0.5;
+  z-index: -1;
+  background-size: cover;
 }
 
 .steps {
@@ -541,6 +600,7 @@
   margin-top: 2%;
   background-image: url("../img/forMap.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .icon {
@@ -551,6 +611,7 @@
 .icon .fas {
   display: inline-block;
   margin: auto;
+  text-align: center;
   padding: 10%;
   font-size: 8rem;
   transition: all 0.2s ease-in-out;
@@ -569,13 +630,16 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
   width: 100%;
-  height: 500px;
-  transform: scaleX(1);
-  background: url("../img/vawe1.png") no-repeat;
-  background-position: right 126%;
+  z-index: -1;
+  height: 700px;
+  background-image: url("../img/vawe1.png");
+  background-repeat: no-repeat;
   filter: hue-rotate(348deg);
   opacity: 0.5;
+  z-index: -1;
+  background-size: cover;
 }
 
 .pricing-block {
@@ -704,15 +768,16 @@
 .testimonial::before {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
+  right: 0;
   width: 100%;
-  height: 500px;
+  height: 700px;
   background: url("../img/vawe1.png") no-repeat;
   transform: scaleX(-1);
-  background-position: right 126%;
   filter: hue-rotate(348deg);
   opacity: 0.5;
+  background-size: cover;
 }
 
 .testimonial-block {
@@ -1194,8 +1259,6 @@ template {
 
 body {
   width: 100%;
-  height: 7000px;
-  max-width: 1920px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #627d98;

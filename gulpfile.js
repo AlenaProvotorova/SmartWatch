@@ -24,12 +24,9 @@ gulp.task("script", function () {
   return gulp.src("app/js/*.js").pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task("js", function () {
+gulp.task("lib-js", function () {
   return gulp
-    .src([
-      "node_modules/slick-carousel/slick/slick.js",
-      "node_modules/magnific-popup/dist/jquery.magnific-popup.js",
-    ])
+    .src([])
     .pipe(concat("libs.min.js"))
     .pipe(uglify())
     .pipe(gulp.dest("app/js"))
@@ -50,4 +47,4 @@ gulp.task("watch", function () {
   gulp.watch("app/js/*.js", gulp.parallel("script"));
 });
 
-gulp.task("start", gulp.parallel("scss", "js", "browser-sync", "watch"));
+gulp.task("start", gulp.parallel("scss", "browser-sync", "watch"));

@@ -90,5 +90,9 @@ $text-color: #627d98;
     padding: 2%;
     color: $main-color;
     font-size: 1.1rem;
+    transition: all 0.2s ease-in-out;
+  }
+  a:hover {
+    color: $primary-color;
   }
 }
