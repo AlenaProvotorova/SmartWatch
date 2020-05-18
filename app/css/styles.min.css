@@ -1,3 +1,94 @@
+.cta {
+  margin: 5% 0;
+  width: 100%;
+  background-color: #2286eb;
+  background-image: url("../img/phone-left.png"), url("../img/phone-right.png");
+  background-repeat: no-repeat;
+  background-size: 32%, 32%;
+  background-position: left -8% top 126%, right -7% bottom 109%;
+}
+
+.cta-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  padding: 4%;
+}
+
+.cta-block .block-title {
+  color: #fff;
+}
+
+.cta-block .cta__text {
+  font-size: 0.9rem;
+  padding-bottom: 2%;
+}
+
+.email-form {
+  background-color: #fff;
+  padding: 2px;
+  margin: 5% 0;
+  width: 70%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.email-form .fa-telegram-plane {
+  padding-left: 4%;
+  color: #2286eb;
+  font-size: 1.4rem;
+}
+
+.email-form input {
+  width: 58%;
+  padding: 2%;
+  background-color: transparent;
+  border-color: transparent;
+  color: #2286eb;
+  outline: none;
+}
+
+.email-form ::-webkit-input-placeholder {
+  color: #2286eb;
+}
+
+.email-form .email-form__button {
+  background-color: #2286eb;
+  border-radius: 20px;
+  padding: 3% 8%;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: transparent;
+  height: 100%;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.email-form .email-form__button:hover {
+  box-shadow: inset 0 0 10px #0e0469;
+  color: #dde7ff;
+}
+
+.cta__icons {
+  justify-content: center;
+  display: flex;
+  width: 50%;
+}
+
+.cta__icons .fab {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.808);
+  padding: 2%;
+}
 .faq {
   position: relative;
 }
@@ -33,11 +124,12 @@
   border-radius: 10px;
   margin-top: 2%;
   position: relative;
+  transition: all 0.3s ease-in-out;
 }
 
 .faq-block__question .fa-chevron-right {
   position: absolute;
-  top: 20px;
+  top: 23px;
   right: 20px;
   color: rgba(128, 128, 128, 0.637);
 }
@@ -59,6 +151,10 @@
 
 .answer--open {
   display: block;
+}
+
+.answer-title {
+  cursor: pointer;
 }
 
 .answer-title--active {

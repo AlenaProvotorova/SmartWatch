@@ -38,9 +38,10 @@ $text-color: #627d98;
   border-radius: 10px;
   margin-top: 2%;
   position: relative;
+  transition: all 0.3s ease-in-out;
   .fa-chevron-right {
     position: absolute;
-    top: 20px;
+    top: 23px;
     right: 20px;
     color: rgba(128, 128, 128, 0.637);
   }
@@ -62,6 +63,10 @@ $text-color: #627d98;
 
 .answer--open {
   display: block;
+}
+
+.answer-title {
+  cursor: pointer;
 }
 
 .answer-title--active {
