@@ -73,21 +73,30 @@ $text-color: #627d98;
   padding: 1%;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
   .link {
     width: 20%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    white-space: nowrap;
+
+    @media screen and (max-width: 1024px) {
+      margin: 0 auto;
+    }
   }
   .fas {
-    padding: 2%;
+    padding: 4%;
     color: $main-color;
     font-size: 1.3rem;
   }
   a {
     display: inline-block;
     width: 90%;
-    padding: 2%;
+    padding: 4%;
     color: $main-color;
     font-size: 1.1rem;
     transition: all 0.2s ease-in-out;

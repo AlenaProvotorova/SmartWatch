@@ -39,8 +39,8 @@ $text-color: #627d98;
   margin-top: 2%;
   width: 100%;
   text-align: end;
-  a {
-    margin-left: 10%;
+  a:not(:first-child) {
+    margin-left: 7%;
   }
 }
 

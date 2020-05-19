@@ -31,6 +31,9 @@ $text-color: #627d98;
 
 .faq-block__questions {
   width: 60%;
+  @media screen and (max-width: 780px) {
+    width: 100%;
+  }
 }
 
 .faq-block__question {
@@ -43,9 +46,12 @@ $text-color: #627d98;
   transition: all 0.3s ease-in-out;
   .fa-chevron-right {
     position: absolute;
-    top: 23px;
-    right: 20px;
+    top: 0;
+    right: 0;
+    padding: 4%;
     color: rgba(128, 128, 128, 0.637);
+    @media screen and (max-width: 780px) {
+    }
   }
   .fa-chevron-right--active {
     transform: rotate(90deg);
@@ -83,4 +89,7 @@ $text-color: #627d98;
   background-repeat: no-repeat;
   background-size: contain;
   filter: drop-shadow(2px 2px 5px rgba(0, 23, 153, 0.418));
+  @media screen and (max-width: 780px) {
+    display: none;
+  }
 }

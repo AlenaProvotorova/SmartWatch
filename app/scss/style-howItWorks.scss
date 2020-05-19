@@ -35,6 +35,15 @@ $text-color: #627d98;
   margin: 2% 0;
   border-radius: 15px;
   transition: all 0.3s ease-in-out;
+  @media screen and (max-width: 780px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1% 0;
+    flex-basis: 33%;
+    height: 250px;
+  }
 
   .fas {
     padding-top: 15%;
@@ -45,6 +54,9 @@ $text-color: #627d98;
     color: $primary-color;
     font-size: 1.3rem;
     padding-top: 5%;
+    @media screen and (max-width: 780px) {
+      text-align: center;
+    }
   }
   .step-text {
     padding-top: 10%;
@@ -72,6 +84,9 @@ $text-color: #627d98;
   font-weight: 500;
   color: rgba(94, 93, 93, 0.116);
   z-index: -1;
+  @media screen and (max-width: 780px) {
+    display: none;
+  }
 }
 
 .step2::before {
@@ -83,6 +98,9 @@ $text-color: #627d98;
   font-weight: 500;
   color: rgba(94, 93, 93, 0.116);
   z-index: -1;
+  @media screen and (max-width: 780px) {
+    display: none;
+  }
 }
 
 .step3::before {
@@ -94,6 +112,9 @@ $text-color: #627d98;
   font-weight: 500;
   color: rgba(94, 93, 93, 0.116);
   z-index: -1;
+  @media screen and (max-width: 780px) {
+    display: none;
+  }
 }
 
 .block-text {
