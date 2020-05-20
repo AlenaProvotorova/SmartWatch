@@ -43,3 +43,39 @@ questions.forEach((element, i) => {
     answerTitles[i].classList.add("answer-title--active");
   });
 });
+
+// comment block
+
+const btnRight = document.querySelector(".fa-arrow-right");
+const btnLeft = document.querySelector(".fa-arrow-left");
+const photoes = document.querySelectorAll(".photo-comment");
+
+let currentIndex = 0;
+
+function removeClass(cl) {
+  photoes.forEach((elem) => elem.classList.remove(cl));
+}
+
+btnRight.addEventListener("click", function () {
+  if (currentIndex < 2) {
+    removeClass("photo-comment--active");
+    photoes[currentIndex + 1].classList.add("photo-comment--active");
+    currentIndex++;
+    btnLeft.classList.add("arrow-active");
+  }
+  if (currentIndex === 2) {
+    btnRight.classList.remove("arrow-active");
+  }
+});
+
+btnLeft.addEventListener("click", function () {
+  if (currentIndex > 0) {
+    currentIndex--;
+    removeClass("photo-comment--active");
+    photoes[currentIndex].classList.add("photo-comment--active");
+    if (currentIndex === 0) {
+      btnLeft.classList.remove("arrow-active");
+      btnRight.classList.add("arrow-active");
+    }
+  }
+});

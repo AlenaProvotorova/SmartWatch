@@ -64,11 +64,45 @@ $text-color: #627d98;
   .comment-photo {
     width: 106%;
     height: 100%;
-    background: url("../img/Template.jpg") no-repeat -16% 37%/96%;
-    @media screen and (max-width: 650px) {
-      width: 106%;
-      height: 100%;
-      background: url(../img/Template.jpg) no-repeat -1px -19px/96%;
+    background-color: red;
+    position: relative;
+    img {
+      width: 100%;
+      position: absolute;
+      top: -100px;
+      left: -28px;
+      display: none;
+      transform: scale(1.1);
+      @media screen and (max-width: 3000px) {
+        top: -120px;
+        left: -116px;
+      }
+      @media screen and (max-width: 2500px) {
+        top: -100px;
+        left: -39px;
+      }
+
+      @media screen and (max-width: 1920px) {
+        top: -60px;
+        left: 10px;
+      }
+      @media screen and (max-width: 500px) {
+        top: -18px;
+        left: 0px;
+      }
+    }
+
+    .photo-comment2 {
+      top: 43px;
+      transform: scale(1.7);
+    }
+    .photo-comment3 {
+      top: 0;
+      transform: scale(1.3);
+    }
+
+    .photo-comment--active {
+      display: block;
     }
   }
 }
@@ -94,6 +128,11 @@ $text-color: #627d98;
 
 .testimonial-block__text {
   font-weight: 400;
+  display: none;
+}
+
+.testimonial-block__text--active {
+  display: block;
 }
 
 .testimonial-block__text2 {
@@ -101,6 +140,11 @@ $text-color: #627d98;
 
   .testimonial-block__name {
     font-size: 1.2rem;
+    display: none;
+  }
+
+  .testimonial-block__name--active {
+    display: inline;
   }
 
   .testimonial-block__prof {
@@ -127,6 +171,7 @@ $text-color: #627d98;
 
   .fas {
     padding: 10%;
+    cursor: pointer;
     @media screen and (max-width: 650px) {
       padding: 0;
       padding-top: 5%;
