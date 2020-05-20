@@ -43,6 +43,10 @@ h1 {
   font-weight: 400;
   text-align: center;
   color: $secondary-color;
+  @media screen and (max-width: 650px) {
+    font-size: 2rem;
+    margin-top: 0;
+  }
 }
 
 h2 {
@@ -127,20 +131,6 @@ a {
       visibility: hidden;
     }
   }
-
-  &__little-buttons {
-    width: 140px;
-    display: none;
-    @media screen and (max-width: 780px) {
-      display: block;
-    }
-    a {
-      display: inline-block;
-      font-size: 1.7rem;
-      color: #fff;
-      padding: 10%;
-    }
-  }
 }
 
 .button {
@@ -161,6 +151,7 @@ a {
   width: 19%;
   margin: 0 auto;
   margin-bottom: 8%;
+  position: relative;
   filter: drop-shadow(2px 2px 5px rgba(10, 11, 82, 0.452));
 
   img {
@@ -192,8 +183,8 @@ a {
   width: 100px;
   height: 100px;
   position: fixed;
-  bottom: 1%;
-  right: 1%;
+  bottom: 2%;
+  right: 2%;
   background-color: transparent;
   border: transparent;
   font-size: 5rem;
@@ -252,12 +243,17 @@ a {
 
 .burger-menu {
   position: absolute;
-  top: 35px;
-  left: 50px;
+  top: 20px;
+  left: 10px;
   display: none;
   @media screen and (max-width: 780px) {
     display: block;
   }
+  @media screen and (max-width: 650px) {
+    top: 20px;
+    left: 10px;
+  }
+
   span {
     display: block;
     width: 40px;
@@ -292,5 +288,27 @@ a {
   }
   span::before {
     transform: rotate(-90deg);
+  }
+}
+
+//----------------------------------little-buttons
+.header__little-buttons {
+  position: absolute;
+  top: -1px;
+  right: 2px;
+  width: 94px;
+  display: none;
+  @media screen and (max-width: 780px) {
+    display: block;
+  }
+  a {
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    padding: 10%;
+  }
+
+  a:hover {
+    color: $primary-color;
   }
 }

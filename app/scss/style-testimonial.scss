@@ -60,22 +60,35 @@ $text-color: #627d98;
   -webkit-mask-size: contain;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-image: url("../img/mask.png");
+
   .comment-photo {
     width: 106%;
     height: 100%;
     background: url("../img/Template.jpg") no-repeat -16% 37%/96%;
+    @media screen and (max-width: 650px) {
+      width: 106%;
+      height: 100%;
+      background: url(../img/Template.jpg) no-repeat -1px -19px/96%;
+    }
   }
 }
 
 .testimonial-block__comment {
   flex-basis: 50%;
   position: relative;
+
   .fa-quote-left {
     position: absolute;
     top: -10%;
     left: -10%;
     font-size: 2rem;
     color: $main-color;
+    @media screen and (max-width: 780px) {
+      left: -15%;
+    }
+    @media screen and (max-width: 650px) {
+      display: none;
+    }
   }
 }
 
@@ -85,9 +98,11 @@ $text-color: #627d98;
 
 .testimonial-block__text2 {
   margin-top: 10%;
+
   .testimonial-block__name {
     font-size: 1.2rem;
   }
+
   .testimonial-block__prof {
     font-size: 0.8rem;
   }
@@ -101,8 +116,21 @@ $text-color: #627d98;
   width: 100px;
   text-align: right;
   right: 5%;
+  @media screen and (max-width: 650px) {
+    position: static;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+  }
+
   .fas {
     padding: 10%;
+    @media screen and (max-width: 650px) {
+      padding: 0;
+      padding-top: 5%;
+    }
   }
 }
 

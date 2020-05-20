@@ -11,11 +11,24 @@ $text-color: #627d98;
   display: flex;
   justify-content: space-between;
   padding: 2% 0;
+  @media screen and (max-width: 650px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .footer-copyright {
   margin-top: 5%;
   color: #fff;
+  @media screen and (max-width: 650px) {
+    text-align: center;
+  }
+}
+
+.footer-images {
+  @media screen and (max-width: 650px) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .footer-blok2 {
@@ -24,6 +37,11 @@ $text-color: #627d98;
   align-items: flex-end;
   justify-content: space-between;
   width: 70%;
+
+  @media screen and (max-width: 650px) {
+    width: 100%;
+  }
+
   a {
     color: #fff;
     font-size: 1.1rem;
@@ -39,15 +57,40 @@ $text-color: #627d98;
   margin-top: 2%;
   width: 100%;
   text-align: end;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  @media screen and (max-width: 780px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 650px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   a:not(:first-child) {
+    display: block;
     margin-left: 7%;
+    @media screen and (max-width: 780px) {
+      margin-bottom: 5px;
+    }
   }
 }
 
 .social-links {
   width: 35%;
   text-align: end;
+  @media screen and (max-width: 650px) {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
   a {
     margin-left: 10%;
+    @media screen and (max-width: 650px) {
+      margin: 0 10px;
+    }
   }
 }

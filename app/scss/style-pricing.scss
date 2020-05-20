@@ -28,6 +28,10 @@ $text-color: #627d98;
 .pricing-block {
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 650px) {
+    justify-content: space-between;
+    overflow-x: scroll;
+  }
 }
 
 .card {
@@ -43,6 +47,11 @@ $text-color: #627d98;
   transition: transform 0.3s ease-in-out;
   @media screen and (max-width: 780px) {
     width: 30%;
+  }
+  @media screen and (max-width: 650px) {
+    width: 50%;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   &__plan {

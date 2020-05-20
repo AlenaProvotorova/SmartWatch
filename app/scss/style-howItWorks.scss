@@ -27,6 +27,9 @@ $text-color: #627d98;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+  }
 }
 
 .step {
@@ -40,9 +43,19 @@ $text-color: #627d98;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin: 1% 0;
+    margin: 2%;
+
     flex-basis: 33%;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.171));
+    background-color: #fff;
     height: 250px;
+  }
+  @media screen and (max-width: 650px) {
+    width: 70%;
+    padding-top: 1%;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.171));
+    background-color: #fff;
+    margin: 2%;
   }
 
   .fas {
@@ -50,6 +63,7 @@ $text-color: #627d98;
     font-size: 2.5rem;
     color: $main-color;
   }
+
   .step-title {
     color: $primary-color;
     font-size: 1.3rem;
@@ -58,8 +72,15 @@ $text-color: #627d98;
       text-align: center;
     }
   }
+
   .step-text {
     padding-top: 10%;
+    @media screen and (max-width: 780px) {
+      text-align: center;
+    }
+    @media screen and (max-width: 650px) {
+      text-align: center;
+    }
   }
 }
 
@@ -151,6 +172,7 @@ $text-color: #627d98;
   top: 43%;
   left: 47%;
   pointer-events: visible;
+  padding-left: 4px;
   cursor: pointer;
   &__arrow {
     width: 50px;

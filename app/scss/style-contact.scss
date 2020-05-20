@@ -6,6 +6,10 @@ $text-color: #627d98;
 .contact-form {
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 780px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .contact-form-1 {
@@ -18,11 +22,16 @@ $text-color: #627d98;
   border: 2px solid $main-color;
   border-radius: 20px;
   color: $main-color;
+  @media screen and (max-width: 780px) {
+    width: 60%;
+  }
+
   .fab {
     color: $main-color;
 
     font-size: 1.5rem;
   }
+
   input {
     outline: none;
     width: 90%;
@@ -31,9 +40,11 @@ $text-color: #627d98;
     border-color: transparent;
     color: $main-color;
   }
+
   ::-webkit-input-placeholder {
     color: $main-color;
   }
+
   select {
     outline: none;
     width: 100%;
@@ -41,6 +52,10 @@ $text-color: #627d98;
     border-color: transparent;
     color: $main-color;
     cursor: pointer;
+    @media screen and (max-width: 780px) {
+      padding: 2%;
+    }
+
     option {
       color: $main-color;
     }
@@ -61,6 +76,9 @@ $text-color: #627d98;
   cursor: pointer;
   outline: none;
   transition: all 0.2s ease-in-out;
+  @media screen and (max-width: 780px) {
+    width: 60%;
+  }
 }
 
 .contact-button:hover {
@@ -86,6 +104,9 @@ $text-color: #627d98;
 
     @media screen and (max-width: 1024px) {
       margin: 0 auto;
+    }
+    @media screen and (max-width: 780px) {
+      width: 60%;
     }
   }
   .fas {
