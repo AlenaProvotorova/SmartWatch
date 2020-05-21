@@ -29,18 +29,24 @@ function returnArrow() {
 
 questions.forEach((element, i) => {
   element.addEventListener("click", function () {
-    arrowBtns.forEach((elem) =>
-      elem.classList.remove("fa-chevron-right--active")
-    );
-    arrowBtns[i].classList.add("fa-chevron-right--active");
+    if (!arrowBtns[i].classList.contains("fa-chevron-right--active")) {
+      arrowBtns.forEach((elem) =>
+        elem.classList.remove("fa-chevron-right--active")
+      );
+      arrowBtns[i].classList.toggle("fa-chevron-right--active");
 
-    answers.forEach((elem) => elem.classList.remove("answer--open"));
-    answers[i].classList.add("answer--open");
+      answers.forEach((elem) => elem.classList.remove("answer--open"));
+      answers[i].classList.add("answer--open");
 
-    answerTitles.forEach((elem) =>
-      elem.classList.remove("answer-title--active")
-    );
-    answerTitles[i].classList.add("answer-title--active");
+      answerTitles.forEach((elem) =>
+        elem.classList.remove("answer-title--active")
+      );
+      answerTitles[i].classList.add("answer-title--active");
+    } else {
+      arrowBtns[i].classList.remove("fa-chevron-right--active");
+      answers[i].classList.remove("answer--open");
+      answerTitles[i].classList.remove("answer-title--active");
+    }
   });
 });
 
@@ -88,7 +94,7 @@ btnLeft.addEventListener("click", function () {
     comments[currentIndex].classList.add("testimonial-block__text--active");
 
     removeClass(names, "testimonial-block__name--active");
-    names[currentIndex + 1].classList.add("testimonial-block__name--active");
+    names[currentIndex].classList.add("testimonial-block__name--active");
 
     if (currentIndex === 0) {
       btnLeft.classList.remove("arrow-active");
