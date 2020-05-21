@@ -29,7 +29,7 @@ function returnArrow() {
 
 questions.forEach((element, i) => {
   element.addEventListener("click", function () {
-    if (!arrowBtns[i].classList.contains("fa-chevron-right--active")) {
+    if (!answerTitles[i].classList.contains("answer-title--active")) {
       arrowBtns.forEach((elem) =>
         elem.classList.remove("fa-chevron-right--active")
       );
@@ -48,12 +48,6 @@ questions.forEach((element, i) => {
       answerTitles[i].classList.remove("answer-title--active");
     }
   });
-});
-
-answerTitles.forEach((elem) => {
-  if (!arrowBtns[i].classList.contains("fa-chevron-right--active")) {
-    elem.classList.remove("answer-title--active");
-  }
 });
 
 // comment block

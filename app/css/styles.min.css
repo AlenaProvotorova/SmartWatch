@@ -463,10 +463,6 @@
   cursor: pointer;
 }
 
-.answer-title:hover {
-  color: #2286eb;
-}
-
 .answer-title--active {
   color: #2286eb;
 }
