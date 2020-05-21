@@ -174,6 +174,9 @@ $text-color: #627d98;
   pointer-events: visible;
   padding-left: 4px;
   cursor: pointer;
+  @media screen and (max-width: 780px) {
+    display: none;
+  }
   &__arrow {
     width: 50px;
     height: 50px;
