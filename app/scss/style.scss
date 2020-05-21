@@ -201,8 +201,8 @@ a {
   }
 }
 
-.up-button .up-button:hover {
-  color: $primary-color;
+.up-button:hover {
+  color: #334e6860;
 }
 
 //----------------------------scroll bar
@@ -311,4 +311,31 @@ a {
   a:hover {
     color: $primary-color;
   }
+}
+
+//----------------------------------modal menu
+
+.modal-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $main-color;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  a {
+    padding: 20px;
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    border-bottom-width: 60%;
+  }
+}
+
+.modal-menu--open {
+  display: flex;
 }
