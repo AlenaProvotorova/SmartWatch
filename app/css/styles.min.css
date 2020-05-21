@@ -316,11 +316,17 @@
   background-color: #fff;
   padding: 2px;
   margin: 5% 0;
-  width: 70%;
+  width: 80%;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 650px) {
+  .email-form {
+    width: 100%;
+  }
 }
 
 .email-form .fa-telegram-plane {
@@ -336,6 +342,12 @@
   border-color: transparent;
   color: #2286eb;
   outline: none;
+}
+
+@media screen and (max-width: 650px) {
+  .email-form input {
+    margin-left: 10px;
+  }
 }
 
 .email-form ::-webkit-input-placeholder {
