@@ -1,0 +1,90 @@
+$main-color: #2286eb;
+$primary-color: #334e68;
+$secondary-color: #fff;
+$text-color: #627d98;
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.blog::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 700px;
+  background: url("../img/vawe1.png") no-repeat;
+  filter: hue-rotate(348deg);
+  opacity: 0.5;
+  transform: scaleX(-1);
+  z-index: -1;
+  background-size: cover;
+}
+
+.blogs-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+  @media screen and (max-width: 780px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.blog-item {
+  cursor: pointer;
+  width: 30%;
+  padding: 4% 3%;
+  background-color: #fff;
+  border-radius: 5px;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
+  transition: all 0.3s ease;
+  @media screen and (max-width: 780px) {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  &__date {
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+
+  &__title {
+    font-weight: 600;
+    padding: 5% 0;
+  }
+}
+
+.blog-item:hover {
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.4));
+  .blog-item__title {
+    color: $main-color;
+  }
+}
+
+.blog-button-block {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-button {
+  margin: 4% 0;
+  padding: 1% 4%;
+  border: transparent;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: $main-color;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.blog-button:hover {
+  box-shadow: inset 0 0 10px rgb(14, 4, 105);
+  color: rgb(221, 231, 255);
+}

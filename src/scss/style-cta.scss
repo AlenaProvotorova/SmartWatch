@@ -1,0 +1,121 @@
+$main-color: #2286eb;
+$primary-color: #334e68;
+$secondary-color: #fff;
+$text-color: #627d98;
+
+.cta {
+  margin: 5% 0;
+  width: 100%;
+  background-color: #2286eb;
+  background-image: url(../img/phone-left.png), url(../img/phone-right.png);
+  background-repeat: no-repeat;
+  background-size: 32%, 32%;
+  background-position: left -8% top 126%, right -7% bottom 109%;
+  @media screen and (max-width: 1420px) {
+    background-position: left -106px top -106px, right -78px bottom -183px;
+  }
+  @media screen and (max-width: 1024px) {
+    background-position: left -108px top -52px, right -78px bottom -118px;
+  }
+  @media screen and (max-width: 900px) {
+    background-image: url(../img/phone-right.png);
+    background-position: right -115px bottom -164px;
+    background-size: 50%;
+  }
+  @media screen and (max-width: 780px) {
+    background-position: right -167px bottom -164px;
+    background-size: 60%;
+  }
+  @media screen and (max-width: 650px) {
+    background-image: none;
+  }
+}
+
+.cta-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  padding: 4%;
+  @media screen and (max-width: 900px) {
+    margin: 0 12% 0 0;
+  }
+  @media screen and (max-width: 650px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .block-title {
+    color: #fff;
+  }
+  .cta__text {
+    font-size: 0.9rem;
+    padding-bottom: 2%;
+  }
+}
+
+.email-form {
+  background-color: #fff;
+  padding: 2px;
+  margin: 5% 0;
+  width: 80%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 650px) {
+    width: 100%;
+  }
+
+  .fa-telegram-plane {
+    padding-left: 4%;
+    color: $main-color;
+    font-size: 1.4rem;
+  }
+
+  input {
+    width: 58%;
+    padding: 2%;
+    background-color: transparent;
+    border-color: transparent;
+    color: #2286eb;
+    outline: none;
+    @media screen and (max-width: 650px) {
+      margin-left: 10px;
+    }
+  }
+  ::-webkit-input-placeholder {
+    color: $main-color;
+  }
+  .email-form__button {
+    background-color: $main-color;
+    border-radius: 20px;
+    padding: 3% 8%;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: transparent;
+    height: 100%;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+  }
+  .email-form__button:hover {
+    box-shadow: inset 0 0 10px rgb(14, 4, 105);
+    color: rgb(221, 231, 255);
+  }
+}
+
+.cta__icons {
+  justify-content: center;
+  display: flex;
+  width: 50%;
+  .fab {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.808);
+    padding: 2%;
+  }
+}
