@@ -143,5 +143,6 @@ modalMenuLinks.forEach((link) => {
   link.addEventListener("click", function () {
     modalMenu.classList.remove("modal-menu--open");
     body.style.overflow = "visible";
+    burgerMenu.classList.remove("burger-menu--close");
   });
 });

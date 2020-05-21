@@ -55,6 +55,9 @@ h2 {
   font-weight: 500;
   text-align: center;
   margin: 3% auto;
+  @media screen and (max-width: 780px) {
+    font-size: 1.5rem;
+  }
 }
 
 .main-wrapper {
@@ -243,14 +246,14 @@ a {
 
 .burger-menu {
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: 10px;
   display: none;
   @media screen and (max-width: 780px) {
     display: block;
   }
   @media screen and (max-width: 650px) {
-    top: 20px;
+    top: 30px;
     left: 10px;
   }
 
@@ -294,7 +297,7 @@ a {
 //----------------------------------little-buttons
 .header__little-buttons {
   position: absolute;
-  top: -1px;
+  top: 10px;
   right: 2px;
   width: 94px;
   display: none;

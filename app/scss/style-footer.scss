@@ -28,6 +28,7 @@ $text-color: #627d98;
   @media screen and (max-width: 650px) {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
 
@@ -59,6 +60,7 @@ $text-color: #627d98;
   text-align: end;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-end;
   @media screen and (max-width: 780px) {
     display: flex;
@@ -66,7 +68,7 @@ $text-color: #627d98;
   }
   @media screen and (max-width: 650px) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   a:not(:first-child) {
@@ -74,6 +76,9 @@ $text-color: #627d98;
     margin-left: 7%;
     @media screen and (max-width: 780px) {
       margin-bottom: 5px;
+    }
+    @media screen and (max-width: 650px) {
+      margin-left: 2%;
     }
   }
 }

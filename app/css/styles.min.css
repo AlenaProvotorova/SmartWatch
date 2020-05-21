@@ -214,7 +214,7 @@
 
 @media screen and (max-width: 780px) {
   .contact-links .link {
-    width: 60%;
+    width: 100%;
   }
 }
 
@@ -505,6 +505,7 @@
   .footer-images {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
 
@@ -539,6 +540,7 @@
   text-align: end;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-end;
 }
 
@@ -552,7 +554,7 @@
 @media screen and (max-width: 650px) {
   .footer-menu {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
@@ -564,6 +566,12 @@
 @media screen and (max-width: 780px) {
   .footer-menu a:not(:first-child) {
     margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer-menu a:not(:first-child) {
+    margin-left: 2%;
   }
 }
 
@@ -1716,6 +1724,12 @@ h2 {
   margin: 3% auto;
 }
 
+@media screen and (max-width: 780px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
 .main-wrapper {
   width: 60%;
   margin: 0 auto;
@@ -1918,7 +1932,7 @@ a {
 
 .burger-menu {
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: 10px;
   display: none;
 }
@@ -1931,7 +1945,7 @@ a {
 
 @media screen and (max-width: 650px) {
   .burger-menu {
-    top: 20px;
+    top: 30px;
     left: 10px;
   }
 }
@@ -1977,7 +1991,7 @@ a {
 
 .header__little-buttons {
   position: absolute;
-  top: -1px;
+  top: 10px;
   right: 2px;
   width: 94px;
   display: none;
