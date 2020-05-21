@@ -51,7 +51,7 @@ questions.forEach((element, i) => {
 });
 
 answerTitles.forEach((elem) => {
-  if (arrowBtns[i].classList.contains("fa-chevron-right--active")) {
+  if (!arrowBtns[i].classList.contains("fa-chevron-right--active")) {
     elem.classList.remove("answer-title--active");
   }
 });
